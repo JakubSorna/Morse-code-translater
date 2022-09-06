@@ -17,5 +17,11 @@ def word_to_morse():
         morse.append(letter_to_morse[letter])
     print(" ".join(morse))
 
+def morse_to_word():
+    code = input("Insert your code by '.' and '-' and put ',' between each letter:")
+    code = code.split(",")
+    word = []
+    for letter in code:
+        word.append(morse_to_letter[letter])
+    print("".join(word))
 
-word_to_morse()
